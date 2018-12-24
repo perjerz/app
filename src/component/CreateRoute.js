@@ -11,12 +11,14 @@ import Select from '@material-ui/core/Select';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Typography from '@material-ui/core/Typography';
+import location from '../assets/location.svg'
 
 class Create extends Component {
     state = {
         start: '',
         target: '',
-        symbols: 'Right'
+        symbols1: 'Right',
+        symbols2: 'Right'
       };
     
       handleChange = name => event => {
@@ -34,95 +36,184 @@ class Create extends Component {
     return (
       <div className="App">
         <Topnav />
-        <form noValidate autoComplete="off">
-        <TextField
-          id="standard-name"
-          label="Current Location"
-          value={this.state.name}
-          onChange={this.handleChange('start')}
-          margin="auto"
-        />
-        <TextField
-          id="standard-name"
-          label="Destination"
-          value={this.state.name}
-          onChange={this.handleChange('target')}
-          margin="auto"
-        />
+        <form noValidate autoComplete="off" style={{paddingLeft: 20, paddingRight: 20, paddingBottom: 20, marginBottom: 20, backgroundColor: '#2DB1FC' }}>
+          <div className="d-flex align-items-center" style={{marginBottom: 20}}>
+            <img className="align-self-end" style={{marginBlockEnd: 5}} src={location} />
+            <TextField
+              style={{marginLeft: 20}}
+              id="standard-name"
+              label="Your Location"
+              value={this.state.location}
+              onChange={this.handleChange('location')}
+              margin="auto"
+              width="100%"
+            />
+          </div>
+          <div className="d-flex align-items-center" style={{marginBottom: 20}}>
+            <TextField
+              style={{marginLeft: 40}}
+              id="standard-name"
+              label="Destination"
+              value={this.state.destination}
+              onChange={this.handleChange('destination')}
+              margin="auto"
+              width="100%"
+            />
+          </div>
         </form>
-        <Card>
+        <Card style={{marginLeft: 15, marginRight: 15, marginBottom: 20}}>
             <CardActions>
-                <Row>
-                    <Col>
+                <Row className='justify-content-center'>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
                         <FormControl>
                             <InputLabel>Path</InputLabel>
                             <Select
-                                value={this.state.symbols}
+                                id='sel2'
+                                value={this.state.symbols2}
                                 onChange={this.handleChangeDropDown}
                                 inputProps={{
-                                    name: 'symbols',
+                                    name: 'symbols2',
                                     id: 'age-simple',
                                 }}
                             >
-                                <MenuItem value={10}>Ten</MenuItem>
-                                <MenuItem value={20}>Twenty</MenuItem>
-                                <MenuItem value={30}>Thirty</MenuItem>
+                                <MenuItem value={"Turn left"}>Left</MenuItem>
+                                <MenuItem value={"Turn right"}>Right</MenuItem>
+                                <MenuItem value={"Forward"}>Forward</MenuItem>
+                                <MenuItem value={"Go escalator"}>Escalator</MenuItem>
                             </Select>
                         </FormControl>
                     </Col>
-                    <Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
                         <Typography gutterBottom>
-                            Turn Right
+                            Turn Left
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             walk 150m.
                         </Typography>
                     </Col>
-                    <Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
                         <Typography gutterBottom>
                            UPLOAD PICTURE
                         </Typography>
                     </Col>
                 </Row>
-      </CardActions>
-    </Card>
-    <Card>
+            </CardActions>
+        </Card>
+        <Card style={{marginLeft: 15, marginRight: 15, marginBottom: 20}}>
             <CardActions>
-                <Row>
-                    <Col>
+                <Row className='justify-content-center'>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
                         <FormControl>
                             <InputLabel>Path</InputLabel>
                             <Select
-                                value={this.state.symbols}
+                                id='sel2'
+                                value={this.state.symbols2}
                                 onChange={this.handleChangeDropDown}
                                 inputProps={{
-                                    name: 'symbols',
+                                    name: 'symbols2',
                                     id: 'age-simple',
                                 }}
                             >
-                                <MenuItem value={10}>Ten</MenuItem>
-                                <MenuItem value={20}>Twenty</MenuItem>
-                                <MenuItem value={30}>Thirty</MenuItem>
+                                <MenuItem value={"Turn left"}>Left</MenuItem>
+                                <MenuItem value={"Turn right"}>Right</MenuItem>
+                                <MenuItem value={"Forward"}>Forward</MenuItem>
+                                <MenuItem value={"Go escalator"}>Escalator</MenuItem>
                             </Select>
                         </FormControl>
                     </Col>
-                    <Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
                         <Typography gutterBottom>
-                            Turn Right
+                            Turn Left
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             walk 150m.
                         </Typography>
                     </Col>
-                    <Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
                         <Typography gutterBottom>
                            UPLOAD PICTURE
                         </Typography>
                     </Col>
                 </Row>
-      </CardActions>
-    </Card>
-      </div>
+            </CardActions>
+        </Card>
+        <Card style={{marginLeft: 15, marginRight: 15, marginBottom: 20}}>
+            <CardActions>
+                <Row className='justify-content-center'>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
+                        <FormControl>
+                            <InputLabel>Path</InputLabel>
+                            <Select
+                                id='sel2'
+                                value={this.state.symbols2}
+                                onChange={this.handleChangeDropDown}
+                                inputProps={{
+                                    name: 'symbols2',
+                                    id: 'age-simple',
+                                }}
+                            >
+                                <MenuItem value={"Turn left"}>Left</MenuItem>
+                                <MenuItem value={"Turn right"}>Right</MenuItem>
+                                <MenuItem value={"Forward"}>Forward</MenuItem>
+                                <MenuItem value={"Go escalator"}>Escalator</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
+                        <Typography gutterBottom>
+                            Turn Left
+                        </Typography>
+                        <Typography color="textSecondary" gutterBottom>
+                            walk 150m.
+                        </Typography>
+                    </Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
+                        <Typography gutterBottom>
+                           UPLOAD PICTURE
+                        </Typography>
+                    </Col>
+                </Row>
+            </CardActions>
+        </Card>
+        <Card style={{marginLeft: 15, marginRight: 15, marginBottom: 20}}>
+            <CardActions>
+                <Row className='justify-content-center'>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
+                        <FormControl>
+                            <InputLabel>Path</InputLabel>
+                            <Select
+                                id='sel2'
+                                value={this.state.symbols2}
+                                onChange={this.handleChangeDropDown}
+                                inputProps={{
+                                    name: 'symbols2',
+                                    id: 'age-simple',
+                                }}
+                            >
+                                <MenuItem value={"Turn left"}>Left</MenuItem>
+                                <MenuItem value={"Turn right"}>Right</MenuItem>
+                                <MenuItem value={"Forward"}>Forward</MenuItem>
+                                <MenuItem value={"Go escalator"}>Escalator</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
+                        <Typography gutterBottom>
+                            Turn Left
+                        </Typography>
+                        <Typography color="textSecondary" gutterBottom>
+                            walk 150m.
+                        </Typography>
+                    </Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
+                        <Typography gutterBottom>
+                           UPLOAD PICTURE
+                        </Typography>
+                    </Col>
+                </Row>
+            </CardActions>
+        </Card>
+    </div>
     );
   }
 }

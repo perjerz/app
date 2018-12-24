@@ -58,9 +58,9 @@ class Main extends Component {
             title="Popular Food in Thailand"
           />
         </Card>
-        <Row>
+        <Row className='justify-content-center'>
           <Col>
-            <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}}>
+            <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}} className="d-flex align-items-center">
               <CardActionArea>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
@@ -75,7 +75,7 @@ class Main extends Component {
             </Card>
         </Col>
         <Col>
-          <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}}>
+          <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}} className="d-flex align-items-center">
             <CardActionArea>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
@@ -90,7 +90,7 @@ class Main extends Component {
           </Card>
           </Col>
           <Col>
-            <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}}>
+            <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}} className="d-flex align-items-center">
               <CardActionArea>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
