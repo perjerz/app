@@ -3,6 +3,7 @@ import bus from '../assets/bus.svg';
 import motorcycle from '../assets/motorcycle.svg';
 import train from '../assets/train.svg';
 import Passport from './Passport';
+import { Button} from 'mdbreact';
 
 const detail = {
   width: '50%'
@@ -20,34 +21,21 @@ const border = {
 const column = {borderLeft: '1px solid #000', padding: 10};
 
 class List extends Component {
+
+
   render() {
+    const bloggers = [
+      {id: 1, img: 'https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg', name: 'Michael', title: 'Easy to go to Chidlom', start: 'Asoke', end: 'Chidlom'}
+    ];
     return (
       <div>
-        <div style={border} className="d-flex flex-row">
-          <div className="d-flex align-items-center">
-            <img style={icon} alt="bus" src={bus}/>
-          </div>
-          <div style={{...column, flex: '50%'}} className="d-flex">
-            <p>1. Go to Victory Monoment</p>
-          </div>
-          <div style={{...column, flex: '50%'}} className="d-flex flex-column">
-            <div style={{whiteSpace: 'pre'}}>20 Minutes</div>
-          </div>
-        </div>
-        <div style={border} className="d-flex flex-row">
-          <div className="d-flex align-items-center">
-            <img style={icon} alt="train" src={train}/>
-          </div>
-          <div style={{...column, flex: '50%'}} className="d-flex">
-            <p>2. Go to BTS Mochit</p>
-          </div>
-          <div style={{...column, flex: '50%'}} className="d-flex flex-column">
-            <div style={{whiteSpace: 'pre'}}>20 Minutes</div>
-          </div>
-        </div>
-        <Passport></Passport>
-      </div>
+        {bloggers.map(b => (<Passport img={b.img} name={b.name} title={b.title} start={b.start} end={b.end} handleClick={e => this.selectPassport(b.id)}></Passport>))}
+      </div>  
     );
+  }
+  selectPassport(id) {
+    console.log(id);
+    //TODO: Navigate
   }
 }
 
