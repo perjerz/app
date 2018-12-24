@@ -30,3 +30,22 @@
     transform: rotate(360deg);
   }
 }
+
+.bgnav {
+  background-color: #2db1fc; 
+  /* margin-bottom: 15px; */
+}
+
+.navbar-brand {
+  color: white !important;
+  margin-bottom: 15px;
+}
+
+.MuiCardHeader-root-51 {
+  color: white !important;
+  background-color: #2db1fc; 
+}
+
+.MuiCardContent-root-92 {
+  margin: 20px;
+}
