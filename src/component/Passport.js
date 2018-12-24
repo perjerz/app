@@ -8,25 +8,21 @@ class Passport extends Component {
     return (
       <Card className="face front p-4">
         <div className="row align-items-center">
-          <div className="col col-2">
-            <img
+        <img
             src={img}
-            alt="" style={{width: 100, height: 100, borderRadius: 50}}/>
-          </div>
-          <div className="col">
-            <h4 className="font-weight-bold mb-3">{name}</h4>
-          </div>
-        </div>
-        <div className="row">
-          <div  className="col p-0 offset-2">
-            <h3 style={{margin: 0, textAlign: 'left'}}>{title}</h3>
+            alt="" style={{width: 80, height: 80, borderRadius: 50}}/>
+          <div className="col ml-4 p-0">
+            <h4 style={{textAlign: 'left'}} className="font-weight-bold mb-3">{name}</h4>
           </div>
         </div>
         <div className="row">
-          <div style={{textAlign: 'left'}} className="col p-0 offset-2">{start} → {end}</div>
+          <div style={{marginLeft: 105, textAlign: 'left'}}>{title}</div>
+        </div>
+        <div className="row">
+          <div style={{marginLeft: 105, textAlign: 'left'}} className="col p-0 offset-4">{start} → {end}</div>
         </div>
         <div className="row justify-content-end">
-          <Button onClick={(e) => handleClick(id)}>READ</Button>
+          <Button color="warning" onClick={(e) => handleClick(id)}>READ</Button>
         </div>
       </Card>
     );

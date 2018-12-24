@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Passport from './Passport';
 
-const column = {borderLeft: '1px solid #000', padding: 10};
-
 class List extends Component {
   render() {
     const bloggers = [
