@@ -12,6 +12,9 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { Row, Col } from 'react-bootstrap';
+import yaowarat from '../assets/yaowarat.jpg';
+import rotfai from '../assets/rotfai.jpg';
+import terminal from '../assets/terminal21.jpg';
 
 class Main extends Component {
   state = {
@@ -55,7 +58,7 @@ class Main extends Component {
         </Card>
         <Card style={{marginBottom: 20, backgroundColor: '#2db1fc'}}>
           <CardHeader
-            title="Popular Food in Thailand"
+            title="Popular Place in Thailand"
           />
         </Card>
         <Row className='justify-content-center'>
@@ -63,12 +66,9 @@ class Main extends Component {
             <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}} className="d-flex align-items-center">
               <CardActionArea>
                 <CardContent>
+                  <img src={yaowarat} style={{width: '100%'}} />
                   <Typography gutterBottom variant="h5" component="h2">
-                    Pad Thai
-                  </Typography>
-                  <Typography component="p">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica
+                    Yao Warat
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -78,12 +78,9 @@ class Main extends Component {
           <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}} className="d-flex align-items-center">
             <CardActionArea>
               <CardContent>
+                <img src={rotfai} style={{width: '100%'}} />
                 <Typography gutterBottom variant="h5" component="h2">
-                  Khanom Chin
-                </Typography>
-                <Typography component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                Rot Fai Train Night Market
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -93,12 +90,9 @@ class Main extends Component {
             <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}} className="d-flex align-items-center">
               <CardActionArea>
                 <CardContent>
+                  <img src={terminal} style={{width: '100%'}} />
                   <Typography gutterBottom variant="h5" component="h2">
-                    Pad Thai
-                  </Typography>
-                  <Typography component="p">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica
+                    Terminal 21
                   </Typography>
                 </CardContent>
               </CardActionArea>

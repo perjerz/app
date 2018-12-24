@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Passport from './Passport';
 import { TextField } from '@material-ui/core';
-import location from '../assets/location.svg'
+import location from '../assets/location.svg';
+import pin from '../assets/pin.svg'
 import Topnav from './Topnav';
 
 class List extends Component {
@@ -38,8 +39,9 @@ class List extends Component {
             />
           </div>
           <div className="d-flex align-items-center" style={{marginBottom: 20}}>
+            <img className="align-self-end" style={{marginBlockEnd: 5}} src={pin} />
             <TextField
-              style={{marginLeft: 40}}
+              style={{marginLeft: 20}}
               id="standard-name"
               label="Destination"
               value={this.state.destination}
