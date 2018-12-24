@@ -12,6 +12,8 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Typography from '@material-ui/core/Typography';
 import location from '../assets/location.svg'
+import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import IconButton from '@material-ui/core/IconButton';
 
 class Create extends Component {
     state = {
@@ -92,9 +94,51 @@ class Create extends Component {
                         </Typography>
                     </Col>
                     <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
+                    <Button variant="contained" size="small">
+                    <IconButton color="primary"  component="span">
+          <             PhotoCamera />
+                    </IconButton>
+                    </Button>
+                    </Col>
+                </Row>
+            </CardActions>
+        </Card>
+            <Card style={{marginLeft: 15, marginRight: 15, marginBottom: 20}}>
+            <CardActions>
+                <Row className='justify-content-center'>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
+                        <FormControl>
+                            <InputLabel>Path</InputLabel>
+                            <Select
+                                id='sel2'
+                                value={this.state.symbols2}
+                                onChange={this.handleChangeDropDown}
+                                inputProps={{
+                                    name: 'symbols2',
+                                    id: 'age-simple',
+                                }}
+                            >
+                                <MenuItem value={"Turn left"}>Left</MenuItem>
+                                <MenuItem value={"Turn right"}>Right</MenuItem>
+                                <MenuItem value={"Forward"}>Forward</MenuItem>
+                                <MenuItem value={"Go escalator"}>Escalator</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
                         <Typography gutterBottom>
-                           UPLOAD PICTURE
+                            Turn Left
                         </Typography>
+                        <Typography color="textSecondary" gutterBottom>
+                            walk 150m.
+                        </Typography>
+                    </Col>
+                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
+                    <Button variant="contained" size="small">
+                    <IconButton color="primary"  component="span">
+          <             PhotoCamera />
+                    </IconButton>
+                    </Button>
                     </Col>
                 </Row>
             </CardActions>
@@ -130,9 +174,11 @@ class Create extends Component {
                         </Typography>
                     </Col>
                     <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
-                        <Typography gutterBottom>
-                           UPLOAD PICTURE
-                        </Typography>
+                    <Button variant="contained" size="small">
+                    <IconButton color="primary"  component="span">
+          <             PhotoCamera />
+                    </IconButton>
+                    </Button>
                     </Col>
                 </Row>
             </CardActions>
@@ -168,47 +214,11 @@ class Create extends Component {
                         </Typography>
                     </Col>
                     <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
-                        <Typography gutterBottom>
-                           UPLOAD PICTURE
-                        </Typography>
-                    </Col>
-                </Row>
-            </CardActions>
-        </Card>
-        <Card style={{marginLeft: 15, marginRight: 15, marginBottom: 20}}>
-            <CardActions>
-                <Row className='justify-content-center'>
-                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
-                        <FormControl>
-                            <InputLabel>Path</InputLabel>
-                            <Select
-                                id='sel2'
-                                value={this.state.symbols2}
-                                onChange={this.handleChangeDropDown}
-                                inputProps={{
-                                    name: 'symbols2',
-                                    id: 'age-simple',
-                                }}
-                            >
-                                <MenuItem value={"Turn left"}>Left</MenuItem>
-                                <MenuItem value={"Turn right"}>Right</MenuItem>
-                                <MenuItem value={"Forward"}>Forward</MenuItem>
-                                <MenuItem value={"Go escalator"}>Escalator</MenuItem>
-                            </Select>
-                        </FormControl>
-                    </Col>
-                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
-                        <Typography gutterBottom>
-                            Turn Left
-                        </Typography>
-                        <Typography color="textSecondary" gutterBottom>
-                            walk 150m.
-                        </Typography>
-                    </Col>
-                    <Col style={{paddingLeft: 10, paddingRight: 10, marginBottom: 20}} className='justify-content-center'>
-                        <Typography gutterBottom>
-                           UPLOAD PICTURE
-                        </Typography>
+                    <Button variant="contained" size="small">
+                    <IconButton color="primary"  component="span">
+          <             PhotoCamera />
+                    </IconButton>
+                    </Button>
                     </Col>
                 </Row>
             </CardActions>

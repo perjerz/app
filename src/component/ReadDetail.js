@@ -7,6 +7,12 @@ import exit from '../assets/vtm_6.jpg';
 import train from '../assets/train.svg';
 import Topnav from './Topnav';
 import { Card } from 'mdbreact';
+import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import IconButton from '@material-ui/core/IconButton';
+import Icon from '@material-ui/core/Icon';
 
 const mlAuto = {
   marginLeft: 'auto'
@@ -81,6 +87,16 @@ class List extends Component {
             </div>
           </div>
         </Card>
+        <Nav pullRight style={{marginRight: 20}}>
+            <NavItem>
+              <Link to="/chat">
+              <IconButton color="secondary" aria-label="Add an alarm">
+              <img src={exit} style={{height: 100, marginTop: 10, marginBottom: 10}} />
+
+      </IconButton>     
+              </Link>
+            </NavItem>
+          </Nav>
       </div>
     );
   }

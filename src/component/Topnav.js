@@ -4,7 +4,7 @@ import '../App.css';
 import Button from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo2.png';
+import logo from '../assets/new_logo.png';
 
 class Topnav extends Component {
   render() {
@@ -14,7 +14,7 @@ class Topnav extends Component {
         <Navbar className="bgnav">
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/">
+              <a href="/home">
               <img style={{height: 40}} src={logo} /></a>
             </Navbar.Brand>
           </Navbar.Header>
