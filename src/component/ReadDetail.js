@@ -6,6 +6,7 @@ import bts from '../assets/vtm_5.jpg';
 import exit from '../assets/vtm_6.jpg';
 import train from '../assets/train.svg';
 import Topnav from './Topnav';
+import { Card } from 'mdbreact';
 
 const mlAuto = {
   marginLeft: 'auto'
@@ -41,18 +42,21 @@ class List extends Component {
             <div className="col text-end" style={{color: '#2DB1FC'}}>15 Min</div>
           </div>
         </div>
-        <div className="row align-items-center" style={{paddingRight: 10}} >
-          <div class="col">
-            <img src={turnRight} />
+        <Card style={{margin: 10}}>
+          <div className="row align-items-center" style={{paddingRight: 10}} >
+            <div class="col">
+              <img src={turnRight} />
+            </div>
+            <div class="col">
+              <div className="ml-4" style={{color: '#2DB1FC'}}>Go to BTS Platform</div>
+            </div>
+            <div class="col">
+              <img src={escalator} style={{height: 100, marginTop: 10, marginBottom: 10}} />
+            </div>
           </div>
-          <div class="col">
-            <div className="ml-4" style={{color: '#2DB1FC'}}>Go to BTS Platform</div>
-          </div>
-          <div class="col">
-            <img src={escalator} style={{height: 100}} />
-          </div>
-        </div>
-        <div className="row align-items-center mt-4" style={{paddingRight: 10}}>
+        </Card>
+        <Card style={{margin: 10}}>
+        <div className="row align-items-center" style={{paddingRight: 10}}>
           <div class="col">
             <img src={train} />
           </div>
@@ -60,20 +64,23 @@ class List extends Component {
             <div className="ml-4" style={{color: '#2DB1FC'}}>Get in BTS</div>
           </div>
           <div class="col">
-            <img src={bts} style={{height: 100}} />
+            <img src={bts} style={{height: 100, marginTop: 10, marginBottom: 10}} />
           </div>
         </div>
-        <div className="row align-items-center mt-4" style={{paddingRight: 10}}>
-          <div class="col">
-            <img src={turnRight} />
+        </Card>
+        <Card style={{margin: 10}}>
+          <div className="row align-items-center" style={{paddingRight: 10}}>
+            <div class="col">
+              <img src={turnRight} />
+            </div>
+            <div class="col">
+              <div className="ml-4" style={{color: '#2DB1FC'}}>Exit BTS Platform</div>
+            </div>
+            <div class="col">
+              <img src={exit} style={{height: 100, marginTop: 10, marginBottom: 10}} />
+            </div>
           </div>
-          <div class="col">
-            <div className="ml-4" style={{color: '#2DB1FC'}}>Exit BTS Platform</div>
-          </div>
-          <div class="col">
-            <img src={exit} style={{height: 100}} />
-          </div>
-        </div>
+        </Card>
       </div>
     );
   }
