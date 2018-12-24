@@ -9,7 +9,7 @@ class Passport extends Component {
     const {img, name, title, start, end, handleClick, id, stars: numberStars } = this.props;
     const stars = (Array(numberStars)).fill(1).map((val, i) => i);
     return (
-      <Card className="face front p-4">
+      <Card className="face front p-4 mb-4">
         <div className="row align-items-center">
         <img
             src={img}

@@ -18,7 +18,8 @@ class List extends Component {
   
   render() {
     const bloggers = [
-      {id: 1, img: 'https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg', name: 'Michael', title: 'Easy to go to Chidlom', start: 'Asoke', end: 'Chidlom', stars: 5}
+      {id: 1, img: 'https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg', name: 'Michael', title: 'Easy to go to Chidlom', start: 'Asoke', end: 'Chidlom', stars: 5},
+      {id: 2, img: 'https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg', name: 'Michael', title: 'Fastest to Chidlom', start: 'Asoke', end: 'Chidlom', stars: 5}
     ];
     return (
       <div>
