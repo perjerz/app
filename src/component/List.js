@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import bus from '../assets/bus.svg';
 import motorcycle from '../assets/motorcycle.svg';
 import train from '../assets/train.svg';
+import Passport from './Passport';
 
 const detail = {
   width: '50%'
@@ -44,6 +45,7 @@ class List extends Component {
             <div style={{whiteSpace: 'pre'}}>20 Minutes</div>
           </div>
         </div>
+        <Passport></Passport>
       </div>
     );
   }
