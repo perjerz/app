@@ -41,7 +41,7 @@ class List extends Component {
             <div className="col text-end" style={{color: '#2DB1FC'}}>15 Min</div>
           </div>
         </div>
-        <div className="row align-items-center">
+        <div className="row align-items-center" style={{paddingRight: 10}} >
           <div class="col">
             <img src={turnRight} />
           </div>
@@ -49,10 +49,10 @@ class List extends Component {
             <div className="ml-4" style={{color: '#2DB1FC'}}>Go to BTS Platform</div>
           </div>
           <div class="col">
-            <img src={escalator} style={{height: 150}} />
+            <img src={escalator} style={{height: 100}} />
           </div>
         </div>
-        <div className="row align-items-center mt-4">
+        <div className="row align-items-center mt-4" style={{paddingRight: 10}}>
           <div class="col">
             <img src={train} />
           </div>
@@ -60,10 +60,10 @@ class List extends Component {
             <div className="ml-4" style={{color: '#2DB1FC'}}>Get in BTS</div>
           </div>
           <div class="col">
-            <img src={bts} style={{height: 150}} />
+            <img src={bts} style={{height: 100}} />
           </div>
         </div>
-        <div className="row align-items-center mt-4">
+        <div className="row align-items-center mt-4" style={{paddingRight: 10}}>
           <div class="col">
             <img src={turnRight} />
           </div>
@@ -71,7 +71,7 @@ class List extends Component {
             <div className="ml-4" style={{color: '#2DB1FC'}}>Exit BTS Platform</div>
           </div>
           <div class="col">
-            <img src={exit} style={{height: 150}} />
+            <img src={exit} style={{height: 100}} />
           </div>
         </div>
       </div>
