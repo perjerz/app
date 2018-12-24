@@ -23,7 +23,7 @@ class List extends Component {
     return (
       <div>
         <Topnav/>
-        <form noValidate autoComplete="off" style={{marginLeft: 20, marginRight: 20, marginBottom: 20 }}>
+        <form noValidate autoComplete="off" style={{paddingLeft: 20, paddingRight: 20, paddingBottom: 20, marginBottom: 20, backgroundColor: '#2DB1FC' }}>
           <div className="d-flex align-items-center" style={{marginBottom: 20}}>
             <img className="align-self-end" style={{marginBlockEnd: 5}} src={location} />
             <TextField
@@ -47,8 +47,10 @@ class List extends Component {
               width="100%"
             />
           </div>
-          {bloggers.map(b => (<Passport img={b.img} name={b.name} title={b.title} start={b.start} end={b.end} handleClick={e => this.selectPassport(b.id)} stars={b.stars}></Passport>))}
-          </form>
+        </form>
+        <div style={{paddingLeft: 20, paddingRight: 20}}>
+          {bloggers.map(b => (<Passport img={b.img} name={b.name} title={b.title} start={b.start} end={b.end} handleClick={e => this.selectPassport(b.id)} stars={b.stars}></Passport>))} 
+        </div>
         </div>
     );
   }
