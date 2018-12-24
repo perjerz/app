@@ -15,11 +15,11 @@ class Passport extends Component {
             src={img}
             alt="" style={{width: 80, height: 80, borderRadius: 50}}/>
           <div className="col ml-4 p-0">
-            <h4 style={{textAlign: 'left'}} className="font-weight-bold mb-3">{name}</h4>
+            <h5 style={{textAlign: 'left'}} className="font-weight-bold mb-3">{name}</h5>
           </div>
         </div>
         <div className="row">
-          <div style={{marginLeft: 105, textAlign: 'left'}}>{title}</div>
+          <h3 style={{marginLeft: 105, textAlign: 'left', color: '#2DB1FC' }}>{title}</h3>
         </div>
         <div className="row">
           <div style={{marginLeft: 105, textAlign: 'left'}} className="col p-0 offset-4">{start} → {end}</div>
