@@ -27,7 +27,6 @@ class Main extends Component {
           value={this.state.name}
           onChange={this.handleChange('start')}
           margin="auto"
-          width="100%"
         />
         <TextField
           id="standard-name"
@@ -35,7 +34,6 @@ class Main extends Component {
           value={this.state.name}
           onChange={this.handleChange('target')}
           margin="auto"
-          width="100%"
         />
         <Link to="/list">
           <Button variant="contained" color="primary">
