@@ -34,7 +34,7 @@ class Main extends Component {
         <Topnav />
         <Card>
           <CardHeader
-            title="HI! David Blabal"
+            title="Hi! John Angular"
           />
           <CardContent>
             <form noValidate autoComplete="off">
@@ -106,7 +106,7 @@ class Main extends Component {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Pat Thai
+            Thong yod
           </Typography>
           <Typography component="p">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
