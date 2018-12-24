@@ -13,6 +13,7 @@ class List extends Component {
               <a href="#">Brand</a>
             </Navbar.Brand>
           </Navbar.Header>
+          
           <Nav pullRight>
             <NavItem>
               David
