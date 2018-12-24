@@ -3,7 +3,8 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import '../App.css';
 import Button from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo2.png';
 
 class Topnav extends Component {
   render() {
@@ -13,7 +14,8 @@ class Topnav extends Component {
         <Navbar className="bgnav">
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/">Dashed Way</a>
+              <a href="/">
+              <img style={{height: 60}} src={logo} /></a>
             </Navbar.Brand>
           </Navbar.Header>
           
