@@ -26,10 +26,10 @@ class List extends Component {
           <div className="d-flex align-items-center">
             <img style={icon} alt="bus" src={bus}/>
           </div>
-          <div style={{...column, flex: 0.2}} className="d-flex">
+          <div style={{...column, flex: '50%'}} className="d-flex">
             <p>1. Go to Victory Monoment</p>
           </div>
-          <div style={{...column, flex: 0.3}} className="d-flex flex-column">
+          <div style={{...column, flex: '50%'}} className="d-flex flex-column">
             <div style={{whiteSpace: 'pre'}}>20 Minutes</div>
           </div>
         </div>
@@ -37,10 +37,10 @@ class List extends Component {
           <div className="d-flex align-items-center">
             <img style={icon} alt="train" src={train}/>
           </div>
-          <div style={{...column, flex: 0.3}} className="d-flex">
+          <div style={{...column, flex: '50%'}} className="d-flex">
             <p>2. Go to BTS Mochit</p>
           </div>
-          <div style={{...column, flex: 0.3}} className="d-flex flex-column">
+          <div style={{...column, flex: '50%'}} className="d-flex flex-column">
             <div style={{whiteSpace: 'pre'}}>20 Minutes</div>
           </div>
         </div>
