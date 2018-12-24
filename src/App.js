@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Main } from './component'
+import { Home, List, Detail } from './component'
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-          <Route exact path="/main" component={ Main } />
+          <Route exact path="/" component={ Home } />
+          <Route exact path="/list" component={ List } />
+          <Route exact path="/detail" component={ Detail } />
         </div>
       </Router>
     );

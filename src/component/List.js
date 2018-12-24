@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+// import logo from './logo.svg';
+// import './App.css';
 
-class Main extends Component {
+class List extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            LIST!!!
           </p>
           <a
             className="App-link"
@@ -23,4 +25,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default List;
