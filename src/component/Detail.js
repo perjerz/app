@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 const styles = theme => ({
     root: {
       width: '80%',
+      display: 'flex',
     },
     button: {
       marginTop: theme.spacing.unit,
@@ -76,7 +77,7 @@ class Detail extends Component {
         const { activeStep } = this.state;
     
         return (
-          <div className={classes.root}>
+          <div className={classes.root} class="align-self-center">
             <Stepper activeStep={activeStep} orientation="vertical">
               {steps.map((label, index) => {
                 return (
