@@ -6,8 +6,8 @@ import starImg from '../assets/star.svg';
 class Passport extends Component {
   
   render() {
-    const {img, name, title, start, end, handleClick, id } = this.props;
-    const stars = [1,2,3,4];
+    const {img, name, title, start, end, handleClick, id, stars: numberStars } = this.props;
+    const stars = (Array(numberStars)).fill(1).map((val, i) => i);
     return (
       <Card className="face front p-4">
         <div className="row align-items-center">
@@ -26,7 +26,7 @@ class Passport extends Component {
         </div>
         <div className="row">
           <div style={{marginLeft: 105, textAlign: 'left'}} className="col p-0 offset-4">
-            {stars.map(star => <img style={{width: 30, height: 30}} src={starImg} />)}
+            {stars.map(star => <img style={{width: 30, height: 30}} src={starImg} alt="star"/>)}
           </div>
         </div>
         <div className="row justify-content-end">
