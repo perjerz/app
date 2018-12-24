@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Card, Button } from 'mdbreact'
 
+import starImg from '../assets/star.svg';
+
 class Passport extends Component {
   
   render() {
     const {img, name, title, start, end, handleClick, id } = this.props;
+    const stars = [1,2,3,4];
     return (
       <Card className="face front p-4">
         <div className="row align-items-center">
@@ -20,6 +23,11 @@ class Passport extends Component {
         </div>
         <div className="row">
           <div style={{marginLeft: 105, textAlign: 'left'}} className="col p-0 offset-4">{start} → {end}</div>
+        </div>
+        <div className="row">
+          <div style={{marginLeft: 105, textAlign: 'left'}} className="col p-0 offset-4">
+            {stars.map(star => <img style={{width: 30, height: 30}} src={starImg} />)}
+          </div>
         </div>
         <div className="row justify-content-end">
           <Button color="warning" onClick={(e) => handleClick(id)}>READ</Button>
