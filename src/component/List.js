@@ -13,8 +13,7 @@ class List extends Component {
     );
   }
   selectPassport(id) {
-    console.log(id);
-    //TODO: Navigate
+    this.props.history.push('detail?id='+id);
   }
 }
 
