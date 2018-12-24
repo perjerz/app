@@ -9,9 +9,7 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import '../App.css';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Row, Col } from 'react-bootstrap';
 
@@ -55,68 +53,58 @@ class Main extends Component {
           </form>
         </CardContent>
         </Card>
-        <Card className="popular">
+        <Card style={{marginBottom: 20, backgroundColor: '#2db1fc'}}>
           <CardHeader
             title="Popular Food in Thailand"
           />
         </Card>
         <Row>
           <Col>
-        <Card>
-      <CardActionArea>
-        <CardMedia
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Pat Thai
-          </Typography>
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Col>
-    <Col>
-        <Card>
-      <CardActionArea>
-        <CardMedia
-          image=""
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Khanom Chin
-          </Typography>
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Col>
-    <Col>
-        <Card>
-      <CardActionArea>
-        <CardMedia
-          image=""
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Pat Thai
-          </Typography>
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Col>
-    </Row>
+            <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}}>
+              <CardActionArea>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Pad Thai
+                  </Typography>
+                  <Typography component="p">
+                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                    across all continents except Antarctica
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+        </Col>
+        <Col>
+          <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}}>
+            <CardActionArea>
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Khanom Chin
+                </Typography>
+                <Typography component="p">
+                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                  across all continents except Antarctica
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          </Col>
+          <Col>
+            <Card style={{marginLeft: 30, marginRight: 30, marginBottom: 10}}>
+              <CardActionArea>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Pad Thai
+                  </Typography>
+                  <Typography component="p">
+                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                    across all continents except Antarctica
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+        </Col>
+      </Row>
       </div>
     );
   }
