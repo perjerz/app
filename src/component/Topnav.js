@@ -15,7 +15,7 @@ class Topnav extends Component {
           <Navbar.Header>
             <Navbar.Brand>
               <a href="/">
-              <img style={{height: 60}} src={logo} /></a>
+              <img style={{height: 40}} src={logo} /></a>
             </Navbar.Brand>
           </Navbar.Header>
           
