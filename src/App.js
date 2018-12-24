@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Home, List, Detail } from './component'
+import { Home, List, Detail, Topnav } from './component'
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
