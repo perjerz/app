@@ -56,7 +56,7 @@ class List extends Component {
     );
   }
   selectPassport(id) {
-    this.props.history.push('detail?id='+id);
+    this.props.history.push('readdetail?id='+id);
   }
 }
 
