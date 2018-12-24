@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { Card, CardBody, Col, Row} from 'mdbreact'
+import { Card, Button } from 'mdbreact'
 
 class Passport extends Component {
+  
   render() {
+  
     return (
-    <div>
+    <div className="d-flex flex-column">
       <Card className="face front">
         <div className="row align-items-center">
           <div className="col col-2">
@@ -15,9 +17,15 @@ class Passport extends Component {
           <h4 className="font-weight-bold mb-3">Marie Johnson</h4>
         </div>
         <div className="row">
-          <p className="font-weight-bold blue-text">Web developer</p>
+          <div  className="col p-0 offset-2">
+            <h1 style={{margin: 0, textAlign: 'left'}}>Easy to Go Chidlom</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div style={{textAlign: 'left'}} className="col p-0 offset-2">Asoke → Chidlom</div>
         </div>
       </Card>
+      <Button className="align-self-end">READ</Button>
     </div>
     );
   }
